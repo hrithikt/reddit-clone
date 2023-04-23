@@ -104,6 +104,20 @@ const Login = (props: Props) => {
                 fontSize="9pt"
                 justifyContent="center"
             >
+                <Text mr={1}>Forgot your password?</Text>
+                <Text
+                    color="blue.500"
+                    fontWeight={700}
+                    cursor="pointer"
+                    onClick={() => setAuthModalState((prev) => ({
+                        ...prev, view: "resetPassword"
+                    }))}
+                >Reset</Text>
+            </Flex>
+            <Flex
+                fontSize="9pt"
+                justifyContent="center"
+            >
                 <Text mr={1}>New Here?</Text>
                 <Text color="blue.500" fontWeight={700} cursor="pointer"
                     onClick={() => setAuthModalState((prev) => ({
